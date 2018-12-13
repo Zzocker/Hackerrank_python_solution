@@ -1,0 +1,6 @@
+from itertools import combinations_with_replacement as combs
+name = input()
+list = name.split()
+string , num = list[0], list[1]
+print(*[''.join(p) for p in combs(sorted(string), int(num))], sep='\n')
+
