@@ -1,0 +1,12 @@
+
+n = int(input())
+dic ={}
+for _ in range(n):
+    record = input().split()
+    name ,mark = record[0],record[1:]
+    mark = list(map(float,mark))
+    dic[name]=mark
+
+name = input()
+marks = dic[name]
+print("%.2f"%(sum(marks)/3))
