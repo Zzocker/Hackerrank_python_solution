@@ -1,0 +1,30 @@
+n = int(input())
+list = []    
+for _ in range(n):
+    grade = [input(),float(input())]
+    list.append(grade)
+list =sorted(list,key=lambda x:x[1])                   #This will sort the list according the marks obtain by people
+mark = []
+i = 0
+while i in range(n):
+    mark.append(list[i][1])
+    i=i+1
+min = min(mark)                                         # This list is only for score
+list_rem = []
+i=0
+while i in range(n):
+    if list[i][1]!=min:
+        list_rem=list_rem+list[i]
+    i=i+1
+min_2 = list_rem[1]
+
+i=0
+name_list = []
+while i in range(n):
+    if list[i][1]==min_2:
+        name_list.append(list[i][0])
+
+    i = i + 1
+sor_list = sorted(name_list)
+for _ in range(len(sor_list)):
+    print(sor_list[_])
