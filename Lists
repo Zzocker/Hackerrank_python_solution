@@ -1,0 +1,23 @@
+n= int(input())
+l = []
+for _ in range(n):
+    inp = input().split()
+    cmd = inp[0]
+    if cmd == "print":
+        print(l)
+    if cmd == "append":
+        l.append(int(inp[1]))
+    if cmd == "sort":
+        l.sort()
+    if cmd == "pop":
+        l.pop()
+    if cmd == 'reverse':
+        l.reverse()
+    if cmd == "remove":
+        l.remove(int(inp[1]))
+    if cmd == "insert":
+        l.insert(int(inp[1]),int(inp[2]))
+
+    
+        
+
